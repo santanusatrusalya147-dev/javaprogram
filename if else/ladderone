@@ -1,0 +1,6 @@
+import java.util.scanner;
+class ladderone
+{
+public static void main(string arg[])
+{
+scanner  sc=new scanner(system.in);

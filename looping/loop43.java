@@ -1,0 +1,13 @@
+class Loop
+{
+       public static void main(String arg[])
+       {
+              int i;
+       i=1;
+       for(;i<=10;i++)
+              { 
+               System.out.println(i);
+                     }
+              }
+       }
+

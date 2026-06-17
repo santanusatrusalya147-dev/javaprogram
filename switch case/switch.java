@@ -1,0 +1,10 @@
+class Switch
+{
+    public static void main(String arg[])
+    {
+          switch(3)
+          {
+            case 3:System.out.println("hi");
+          }
+    }
+}

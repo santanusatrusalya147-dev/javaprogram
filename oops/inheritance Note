@@ -1,0 +1,417 @@
+inhiertance
+_____________
+
+class childclass  extends parentclass
+{
+	
+
+}
+
+single inheritance
+__________________
+class A
+{
+    void f1()
+    {
+       System.out.println("f1 method ");
+    }
+	
+}
+class B extends A
+{
+	
+	 void f2()
+	 {
+	     System.out.println("f2 method ");
+	 }
+
+}
+
+class Test
+{
+	public static void main(String arg[])
+	{
+	    B ob=new B();
+	    ob.f1();
+	    ob.f2();
+	}
+}
+
+
+
+
+
+multilevel inheritance
+______________________
+
+class A
+{
+    void f1()
+    {
+       System.out.println("f1 method ");
+    }
+	
+}
+class B extends A
+{
+	
+	 void f2()
+	 {
+	     System.out.println("f2 method ");
+	 }
+
+}
+class C extends B
+{
+	
+	 void f3()
+	 {
+	     System.out.println("f2 method ");
+	 }
+
+}
+class Test
+{
+	public static void main(String arg[])
+	{
+	    C ob=new C();
+	    ob.f1();
+	    ob.f2();
+	    ob.f3();
+	}
+}
+
+
+hierarchial inheritance
+_________________________
+class A
+{
+    void f1()
+    {
+       System.out.println("f1 method ");
+    }
+	
+}
+class B extends A
+{
+	
+	 void f2()
+	 {
+	     System.out.println("f2 method ");
+	 }
+
+}
+class C extends A
+{
+	
+	 void f3()
+	 {
+	     System.out.println("f2 method ");
+	 }
+
+}
+class Test
+{
+	public static void main(String arg[])
+	{
+	    B ob=new B();
+	    ob.f1();
+	    ob.f2();
+	   C obj=new C();
+	    ob.f1();
+	    ob.f3();
+	}
+}
+
+
+
+
+
+
+multiple inhertiance  not support by class
+_____________________________________
+class A
+{
+    void f1()
+    {
+       System.out.println("f1 method ");
+    }
+	
+}
+class B 
+{
+	
+	 void f2()
+	 {
+	     System.out.println("f2 method ");
+	 }
+
+}
+class C extends A,B   // error
+{
+	
+	 void f3()
+	 {
+	     System.out.println("f2 method ");
+	 }
+
+}
+class Test
+{
+	public static void main(String arg[])
+	{
+	   error 
+	}
+}
+
+
+interface support multiple inhertiance and hybrid  inhertiance
+_____________________________
+
+
+
+student is a person 
+apple is a fruit
+
+
+constructor in inheritance
+_____________________________
+private data and method   constrctor never inheritance
+class A
+{
+	A()
+	{
+	     System.out.println("AC");
+	}
+}
+class B extends A
+{
+	
+}
+class Test
+{
+	public static void main(String arg[])
+	{
+	      B ob=new B();
+	}
+}
+
+
+o/p:
+AC
+
+
+class A
+{
+	A()
+	{
+	     System.out.println("AC");
+	}
+}
+class B extends A
+{  
+     B()
+     {
+        System.out.println("BC");
+	
+     }
+	
+}
+class Test
+{
+	public static void main(String arg[])
+	{
+	      B ob=new B();
+	}
+}
+
+
+o/p:
+AC
+BC
+
+
+
+
+
+
+
+
+class A
+{
+	A()
+	{
+	     System.out.println("AC");
+	}
+}
+class B extends A
+{  
+     B()
+     {
+          super(); //by default avaliable it call parent class zero argument constructor
+        System.out.println("BC");
+	
+     }
+	
+}
+class Test
+{
+	public static void main(String arg[])
+	{
+	      B ob=new B();
+	}
+}
+
+
+o/p:
+AC
+BC
+
+
+
+
+
+
+class A
+{
+	A(int x)
+	{
+	     System.out.println("AC "+x);
+	}
+}
+class B extends A
+{  
+     B(int x,int y)
+     {
+          super(x); 
+        System.out.println("BC "+y);
+	
+     }
+	
+}
+class Test
+{
+	public static void main(String arg[])
+	{
+	      B ob=new B(10,20);
+	}
+}
+
+
+o/p:
+AC  10
+BC  20
+
+
+
+
+
+class A
+{
+	A(int x)
+	{
+	     System.out.println("AC "+x);
+	}
+	A()
+	{
+	    System.out.println("AZC");
+	}
+}
+class B extends A
+{  
+     B(int x,int y)
+     {
+          super(x); 
+        System.out.println("BC "+y);
+	
+     }
+	  B()
+	{
+	     super(); //by default
+	    System.out.println("BZC");
+	}
+}
+class Test
+{
+	public static void main(String arg[])
+	{
+	     B obj=new B();
+	      B ob=new B(10,20);
+	}
+}
+
+
+o/p:
+AZC
+BZC
+AC  10
+BC  20
+
+
+single inhertance real life example
+__________________________________
+class Person
+{
+	String name;
+	int age;
+    Person()
+    {
+
+    }
+    Person(String name,int age)
+    {
+       this.name=name;
+       this.age=age;
+    }
+    void setName(String name)
+    {
+       this.name=name;
+    }
+    void setAge(int age)
+    {
+      this.age=age;
+    }
+    String getName()
+    {
+       return name;
+    }
+    int getAge()
+    {
+       return age;
+    }
+
+}
+
+class Student extends Person
+{
+	double mark;
+	Student()
+	{
+
+	}
+	Stusent(String name,int age,double mark)
+	{
+	    super(name,age);
+	    this.mark=mark;
+	}
+	void setMark(double mark)
+	{
+	   this.mark=mark;
+	}
+	double getMark()
+	{
+	   return mark;
+	}
+}
+
+class StudentPerson
+{
+	public static void main(String arg[])
+	{
+	   Student s=new Student("muna",18,90.50);
+	   s.setName("muna das");
+	   System.out.println("my name="+s.getName());
+	   System.out.println("my rollno="+s.getGe());
+	   System.out.println("my mark="+s.getMark());
+	}
+}

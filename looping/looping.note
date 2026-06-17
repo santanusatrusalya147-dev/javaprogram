@@ -1,0 +1,1427 @@
+looping
+_____
+
+sop("hi");
+sop("hi");
+sop("hi");
+sop("hi");
+sop("hi");
+
+some statement repeated continously then you choose loop.
+
+benifty of loop
+________
+write that repeated stmt only once inside the loop body part { }
+
+There are 3 types of loop
+__________
+while
+do while
+for
+
+for each(array)
+
+every loop  there   are 3 section
+____________
+(1)initlization //start value
+(2)condtional   //stop  value
+(3)updateable/inc/dec    step value
+
+
+while loop   syntax:
+_______
+
+initlization;
+while(condtion)
+{
+    repeated stmt write once;
+    inc/dec; 
+}
+
+
+
+
+//wap display hi msg 5 time without loop
+
+class Test
+{
+    public static void main(String arg[])
+    {
+          System.out.println("hi");
+          System.out.println("hi");
+          System.out.println("hi");
+          System.out.println("hi");
+          System.out.println("hi");
+
+    }
+}
+
+o/p:
+hi
+hi
+hi
+hi
+hi
+
+//wap display hi msg 5 time using while loop
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1; //initlization
+
+         while(i<6) //i<=5  //i!=6
+         {
+            System.out.println("hi");
+            i++; //++i //i=i+1 //i+=1
+          }
+          
+    }
+}
+
+o/p:
+hi
+hi
+hi
+hi
+hi
+
+
+class Test
+{
+    public static void main(String arg[])  
+    {
+         int i;
+         i=1;
+
+         while(i<6) //i<=5  //i!=6
+         {
+            System.out.println("hi");
+          }
+          
+    }
+}
+
+o/p:
+hi
+hi
+hi
+infinit time
+ contol+c
+
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1;
+
+         while(i<6) //i<=5  //i!=6
+         {
+            System.out.println("hi");
+            i+2;
+          }
+          
+    }
+}
+
+o/p:
+
+hi
+
+infinite time
+
+
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1;
+         System.out.println("A");
+         while(i<4) 
+         {
+            System.out.println("B");
+            i++;
+            System.out.println("C");
+          }
+          System.out.println("D");
+          System.out.println(i);
+          
+    }
+}
+
+o/p:
+A
+B
+C
+B
+C
+B
+C
+D
+4
+
+
+
+
+//wap display hi msg 5 time using while loop   decremnt order
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=5;
+         while(i>0) //i>=1  //i!=0
+         {
+            System.out.println("hi");
+            i--;
+          }
+          
+    }
+}
+o/p:
+hi
+hi
+hi
+hi
+hi
+
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1;
+         System.out.print("A");
+         while(i<4)
+         {
+            System.out.print("B");
+            i++;
+             System.out.print("C");
+
+          }
+           System.out.print("D");
+            System.out.print(i);
+          
+    }
+}
+
+o/p:
+ABCBCBCD4
+
+
+break:
+it is a  keyword .
+it is used stop the loop. or outside the loop.
+
+
+
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1;
+         System.out.print("A");
+         while(i<4)
+         {
+            System.out.print("B");
+            i++;
+             System.out.print("C");
+             break;
+          }
+           System.out.print("D");
+            System.out.print(i);
+          
+    }
+}
+o/p:
+ABCD2
+
+
+
+
+
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1;
+         System.out.print("A");
+         while(i<5)
+         {
+            System.out.print("B");
+            i++;
+             System.out.print("C");
+             if(i==3)
+             {
+                break;
+             }
+          }
+           System.out.print("D");
+            System.out.print(i);
+          
+    }
+}
+o/p:
+ABCBCD3
+
+
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1;
+         System.out.print("A");
+         while(i<5)
+         {
+                System.out.print("B");
+                i++;
+                 System.out.print("C");
+                 if(i==3)
+                 {
+                    break;
+                 }
+                 System.out.print("D");
+          }
+           System.out.print("E");
+            System.out.print(i);
+          
+    }
+}
+
+
+o/p:
+ABCDBCE3
+
+Class Test
+{
+    public static void main(string arg[])
+    {
+    int i;
+    i=1;
+    while(i>7)
+    {
+    i++;
+    if(i>=4)
+    {
+    break;
+      }
+system.out.print(i);
+}
+}
+}
+
+o/p:
+23
+
+
+continue:
+it is a keyword.
+every loop  last statmenet by default continue.
+in while continue   back to condtion.(begging loop)
+
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1;
+         System.out.print("A");
+         while(i<4)
+         {
+            System.out.print("B");
+            i++;
+             System.out.print("C");
+             continue; //by default
+
+          }
+           System.out.print("D");
+            System.out.print(i);
+          
+    }
+}
+
+o/p:
+ABCBCBCD4
+
+
+
+
+
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1;
+         System.out.print("A");
+         while(i<5)
+         {
+            System.out.print("B");
+            i++;
+            if(i>=3)
+            {
+              continue;  
+            }
+            System.out.print("C");
+             
+          }
+        System.out.print("D");
+        System.out.print(i);
+          
+    }
+}
+
+i=1,2,3,4,5
+o/p:
+ABCBBBD5
+
+
+
+
+
+o/p:
+ABCBBBD5
+
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1;
+         while(i<5)
+         {
+            i++;
+            if(i>=3)
+            {
+              continue;  
+            }
+            System.out.print(i);
+             
+          }
+       
+    }
+}
+
+o/p:
+2
+
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1;
+         while(i<5)
+         {
+            i++;
+            if(i>=3)
+            {
+              continue;  
+            }
+            System.out.print(i);
+             
+          }
+       System.out.print(i);
+    }
+}
+
+o/p:
+25
+
+
+//wap display 1 to 5 time using while loop
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1;
+
+         while(i<6) //i<=5  //i!=6
+         {
+            System.out.println("i");
+            i++;
+          }
+          
+    }
+}
+o/p:
+i
+i
+i
+i
+i
+
+//wap display 1 to 5 time using while loop
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1;
+
+         while(i<6) //i<=5  //i!=6
+         {
+            System.out.println(i);
+            i++;
+          }
+          
+    }
+}
+o/p:
+1
+2
+3
+4
+5
+
+
+
+//wap display 1 to 10 time using while loop
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=1;
+
+         while(i<11) //i<=10  //i!=11
+         {
+            System.out.println(i);
+            i++;
+          }
+          
+    }
+}
+o/p:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+import java.util.*;
+class Test
+{
+    public static void main(String arg[])
+    {
+        Scanner sc=new Scanner(System.in);
+         int i,r;
+         System.out.println("enter a range ");
+         r=sc.nextInt();
+         i=1;
+         while(i<=r)
+         {
+         System.out.println(i);
+         i++;  
+
+        }
+         
+          
+    }
+}
+
+
+
+import java.util.*;
+class Test
+{
+    public static void main(String arg[])
+    {
+        Scanner sc=new Scanner(System.in);
+         int i,r;
+         System.out.println("enter a min range to max range ");
+         i=sc.nextInt();
+         r=sc.nextInt();
+        while(i<=r)
+         {
+         System.out.println(i);
+         i++;  
+
+        }
+         
+          
+    }
+}
+
+
+//wap display 10  to 1 time using while loop
+class Test
+{
+    public static void main(String arg[])
+    {
+         int i;
+         i=10;
+
+         while(i>0) //i>=1  //i!=0
+         {
+            System.out.println(i);
+            i--;
+          }
+          
+    }
+}
+o/p:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+wap    display   10  to  20
+
+wap    display 20 to  10
+
+//display number digit revorder
+int no=125;
+while(no!=0)
+{
+    System.out.println(no%10);
+    no=no/10;
+}
+
+
+//multiply 2 no without * operator 
+int a=3,b=7,s=0;
+while(a>0)
+{
+   s=s+b;
+   a--; 
+}
+System.out.println(s);
+#Wap display 1 to 10
+
+int i;
+i=1;
+while(i<=10)
+{
+    System.out.println(i)
+    i++;
+}
+
+#Wap display 1 to 10
+
+int i;
+i=10;
+while(i>=1)
+{
+    System.out.println(i)
+    i--;
+}
+
+
+int i;
+i=65;
+while(i<=68)
+{
+    System.out.println((char)i);
+    i++;
+}
+
+
+
+init ;  i=1
+while(condtion)    i<5  1<5 2<5 3<5 4<5 5<5
+{
+       repeated stmt write once;
+       inc/dec;   i++;
+}
+
+
+
+
+
+init ;    i=1
+do 
+{
+       repeated stmt write once;
+       inc/dec;  i++;
+}while(condtion);  i<5   2<5  3<5 4<5  5<5
+
+
+
+
+
+
+
+
+
+
+
+
+#Wap display 1 to 10
+
+int i;
+i=1;
+do
+{
+    System.out.println(i)
+    i++;
+}while(i<=10);
+
+
+
+#Wap display 10 to 1
+
+int i;
+i=10;
+do
+{
+    System.out.println(i)
+    i--;
+}while(i>=1);
+
+
+int i;
+i=65;
+do
+{
+    System.out.println((char)i);
+    i++;
+}while(i<=68);
+
+
+int i;
+i=1;
+do
+{
+    System.out.println(i);
+    i++;
+    if(i==3)
+    {
+       break;
+    }
+}while(i<=5);
+
+
+
+o/p:
+1
+2
+
+
+
+int i;
+i=1;
+do
+{
+   
+    i++;
+    if(i==3)
+    {
+       continue;
+    }
+     System.out.println(i);
+}while(i<=5);
+
+o/p:
+2
+4
+5
+6
+
+
+
+
+
+
+init ; 
+for(;condtion;)   
+{
+       repeated stmt write once;
+       inc/dec; 
+}
+
+
+int i;
+i=1;
+for(;i<=10;)
+{
+    System.out.println(i);
+    i++;
+}
+
+
+init ; 
+for(;condtion;inc/dec )   
+{
+       repeated stmt write once;
+     
+}
+
+
+int i;
+i=1;
+for(;i<=10;i++)
+{
+    System.out.println(i);
+}
+
+
+for(init;condtion;inc/dec )   
+{
+       repeated stmt write once;
+     
+}
+
+
+int i;
+for(i=1;i<=10;i++)
+{
+    System.out.println(i);
+}
+
+
+int i;
+for(i=1;i<=10;i++)
+    System.out.println(i);
+
+
+
+
+int i;
+for(i=1;i<=3;i++)
+    System.out.println("A");
+    System.out.println("B");
+
+
+o/p:
+A
+A
+A
+B
+
+
+int i;
+for(i=1;i<=3;i++)
+    {
+    System.out.println("A");
+    System.out.println("B");
+
+    }
+
+
+o/p:
+A
+B
+A
+B
+A
+B
+
+
+
+int i;
+for(i=1;i<=3;i++)
+    ;
+    System.out.println("A");
+    System.out.println("B");
+
+
+o/p:
+A
+B
+
+int i;
+for(i=1;i<=3;i++);
+    System.out.println("A");
+    System.out.println("B");
+o/p:
+A
+B
+
+
+int i;
+for(i=1;i<=3;i++)
+    System.out.println(i);
+
+o/p:
+1
+2
+3
+
+
+int i;
+for(i=1;i<=3;i++);
+    System.out.println(i);
+
+o/p:
+4
+
+break and continue for loop
+________________________
+
+
+int i;
+for(i=1;i<=5;i++)
+    {
+        System.out.println("A");
+         if(i>=3)
+         {
+            break;
+         }
+        System.out.println("B");
+
+     }
+  System.out.println(i);
+
+
+o/p:
+i=1
+A
+B
+A
+B
+A
+3
+
+
+
+
+
+int i;
+for(i=1;i<=5;i++)
+    {
+        System.out.println("A");
+         if(i>=3)
+         {
+            continue;
+         }
+        System.out.println("B");
+
+     }
+ System.out.println(i);
+
+
+o/p:
+i=1,2,3,4,5,6
+A
+B
+A
+B
+A
+A
+A
+6
+
+
+
+1 2 3 4
+
+System.out.println("1 2 3 4");
+
+1 2 3 4 5
+System.out.println("1 2 3 4 5");
+
+
+
+
+1 2 3 4
+
+int j;
+for(j=1;j<=4;j++)
+    System.out.print(j+"\t");
+System.out.println();
+
+
+1 2 3 4 5
+
+int j;
+for(j=1;j<=5;j++)
+    System.out.print(j+"\t");
+System.out.println();
+
+
+int j,n=4;
+for(j=1;j<=n;j++)
+    System.out.print(j+"\t");
+System.out.println();
+
+
+
+#display n natural number
+import java.util.*;
+class Test
+{
+    public static void main(String arg[])
+    {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("enter n value ");
+       int n=sc.nextInt();
+       int j;
+       for(j=1;j<=n;j++)
+        System.out.print(j+"\t");
+        System.out.println();
+    }
+}
+
+
+
+
+4 3  2 1
+
+int j;
+for(j=4;j>=1;j--)
+    System.out.print(j+"\t");
+System.out.println();
+
+nested loop
+______________
+
+1 2 3 4
+1 2 3 4
+1 2 3 4
+
+
+int i,j;
+for(i=1;i<=3;i++)
+{
+    for(j=1;j<=4;j++)
+      {
+        System.out.print(j+"\t");
+      }
+    System.out.println();
+}
+
+
+or
+
+int i,j;
+i=1;
+while(i<=3)
+{
+    for(j=1;j<=4;j++)
+      {
+        System.out.print(j+"\t");
+      }
+    System.out.println();
+    i++;
+}
+
+
+or
+int i,j;
+i=1;
+while(i<=3)
+{
+    j=1;
+     while(j<=4)
+      {
+        System.out.print(j+"\t");
+        j++;
+      }
+    System.out.println();
+    i++;
+}
+
+
+or
+
+int i,j;
+i=1;
+do
+{
+    j=1;
+     while(j<=4)
+      {
+        System.out.print(j+"\t");
+        j++;
+      }
+    System.out.println();
+    i++;
+}while(i<=3);
+
+
+int i,j;
+i=1;
+do
+{
+    j=1;
+    do
+      {
+        System.out.print(j+"\t");
+        j++;
+      }while(j<=4);
+    System.out.println();
+    i++;
+}while(i<=3);
+
+
+
+
+
+
+1 2 3 4
+1 2 3 4
+1 2 3 4
+
+
+int i,j;
+for(i=1;i<=3;i++)
+{
+    for(j=1;j<=4;j++)
+      {
+        System.out.print(j+"\t");
+      }
+    System.out.println();
+}
+
+
+
+* * * *
+* * * *
+* * * *
+
+int i,j;
+for(i=1;i<=3;i++)
+{
+    for(j=1;j<=4;j++)
+      {
+        System.out.print("*"+"\t");
+      }
+    System.out.println();
+}
+
+
+1 1 1 1
+2 2 2 2
+3 3 3 3
+
+int i,j;
+for(i=1;i<=3;i++)
+{
+    for(j=1;j<=4;j++)
+      {
+        System.out.print(i+"\t");
+      }
+    System.out.println();
+}
+
+
+
+1 2 3 4
+1 2 3 4
+1 2 3 4
+
+
+int i,j;
+for(i=3;i>=1;i--)
+{
+    for(j=1;j<=4;j++)
+      {
+        System.out.print(j+"\t");
+      }
+    System.out.println();
+}
+
+
+
+3 3 3 3
+2 2 2 2
+1 1 1 1
+
+
+int i,j;
+for(i=3;i>=1;i--)
+{
+    for(j=1;j<=4;j++)
+      {
+        System.out.print(i+"\t");
+      }
+    System.out.println();
+}
+
+
+
+
+
+4 3 2 1
+4 3 2 1
+4 3 2 1
+
+
+
+int i,j;
+for(i=1;i<=3;i++)
+{
+    for(j=4;j>=1;j--)
+    {
+        System.out.print(j+"\t");
+    }
+    System.out.println();
+}
+
+
+
+1
+1  2 
+1  2 3
+1  2 3 4
+
+
+
+int i,j;
+for(i=1;i<=4;i++)
+{
+    for(j=1;j<=i;j++)
+    {
+        System.out.print(j+"\t");
+    }
+    System.out.println();
+}
+
+
+1 2 3 4
+1 2 3
+1 2
+1
+
+int i,j;
+for(i=4;i>=1;i--)
+{
+    for(j=1;j<=i;j++)
+    {
+        System.out.print(j+"\t");
+    }
+    System.out.println();
+}
+
+
+
+4 3 2 1
+4 3 2
+4 3
+4
+
+int i,j;
+for(i=1;i<=4;i++)
+{
+    for(j=4;j>=i;j--)
+    {
+        System.out.print(j+"\t");
+    }
+}
+
+
+
+4
+4 3
+4 3 2
+4 3 2 1
+
+int i,j;
+for(i=4;i>=1;i--)
+{
+    for(j=4;j>=i;j--)
+    {
+        System.out.print(j+"\t");
+    }
+}
+
+
+1
+2 1
+3 2 1
+4 3 2 1
+int i,j;
+for(i=1;i<=4;i++)
+{
+    for(j=i;j>=1;j--)
+    {
+        System.out.print(j+"\t");
+    }
+}
+
+
+4 3 2 1
+3 2 1
+2 1 
+1
+int i,j;
+for(i=4;i>=1;i--)
+{
+    for(j=i;j>=1;j--)
+    {
+        System.out.print(j+"\t");
+    }
+}
+
+
+4
+3 4
+2 3 4
+1 2 3 4
+
+
+int i,j;
+for(i=4;i>=1;i--)
+{
+    for(j=i;j<=4;j++)
+    {
+        System.out.print(j+"\t");
+    }
+}
+
+
+
+
+
+1 2 3 4
+2 3 4
+3 4
+4
+
+
+int i,j;
+for(i=1;i<=4;i++)
+{
+    for(j=i;j<=4;j++)
+    {
+        System.out.print(j+"\t");
+    }
+}
+
+
+
+
+
+
+
+
+
+A B C D
+A B C D
+A B C D
+
+int i,j;
+
+for(i=1;i<=3;i++)
+{
+    for(j=65;j<=68;j++)
+    {
+         SYstem.out.print((char)j+"\t");
+    }
+    System.out.println();
+}
+
+
+or
+int i,j;
+for(i=65;i<=67;i++)
+{
+    for(j=65;j<=68;j++)
+    {
+         SYstem.out.print((char)j+"\t");
+    }
+    System.out.println();
+}
+
+
+
+
+A A A A
+B B B B
+C C C C
+
+
+int i,j;
+for(i=65;i<=67;i++)
+{
+    for(j=65;j<=68;j++)
+    {
+         SYstem.out.print((char)i+"\t");
+    }
+    System.out.println();
+}
+
+
+
+C C C C
+B B B B
+A A A A
+
+int i,j;
+for(i=67;i>=65;i--)
+{
+    for(j=65;j<=68;j++)
+    {
+         SYstem.out.print((char)i+"\t");
+    }
+    System.out.println();
+}
+
+
+
+
+
+A B  C D
+A B C
+A B
+A
+
+
+
+
+A 
+A B
+A B C
+A B C D
+
+
+D
+D C
+D C B
+D C B A
+
+
+D  C B A
+D C B
+D C
+D
+
+
+
+
+D
+C D
+B C D
+A B C D
+
+
+
+
+A B C D
+B C D
+C D
+D
+
+
+
+A
+B A 
+C B A
+D C B A
+
+
+
+D C B A
+C B A
+B A
+A

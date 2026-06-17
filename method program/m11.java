@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class m11
+{
+	static double sical()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter p");
+		double p=sc.nextDouble();
+		System.out.println("enter r");
+		double r=sc.nextDouble();
+		System.out.println("enter t");
+		int t=sc.nextInt();
+		double si=p*r*t/100;
+		return si;
+	}
+	public static void main(String arg[])
+	{
+	double si=sical();
+	System.out.println("si="+si);
+	}
+}
+
