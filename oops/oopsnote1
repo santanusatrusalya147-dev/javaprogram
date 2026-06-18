@@ -389,7 +389,7 @@ class Student extends Person
 	{
 
 	}
-	Stusent(String name,int age,double mark)
+	Student(String name,int age,double mark)
 	{
 	    super(name,age);
 	    this.mark=mark;
@@ -411,7 +411,7 @@ class StudentPerson
 	   Student s=new Student("muna",18,90.50);
 	   s.setName("muna das");
 	   System.out.println("my name="+s.getName());
-	   System.out.println("my rollno="+s.getGe());
+	   System.out.println("my rollno="+s.getAge());
 	   System.out.println("my mark="+s.getMark());
 	}
 }
